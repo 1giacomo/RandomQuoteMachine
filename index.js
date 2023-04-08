@@ -43,13 +43,14 @@ function App(){
             <div className="container pt-5">
                 <div className="jumbotron">
                     <div className="card">
-                        <div className="card-header">Inspirational quote</div>
-                        <div className="card-body">
+                        <div className="card-body m-5">
                             {randomQuote ? (
                                 <>
-                                <i className="fa fa-quote-left"></i>
-                                <p className="card-text">&quot;{randomQuote.text}&quot;</p>
-                                <h5 className="title">
+                                <div className="d-flex flex-row">
+                                    <i className="fa fa-quote-left fa-2x"></i>
+                                    <p  className="card-text text-center ml-2" style={{ fontSize: 30 }}>{randomQuote.text}</p>
+                                </div>
+                                <h5 className="title" style={{textAlign: 'right'}}>
                                     - {randomQuote.author || "No author"}
                                 </h5>
                                 
@@ -58,7 +59,7 @@ function App(){
                                 <h2>Loading....</h2>
                             )}
 
-                            <div className="row">
+                            <div className="d-flex flex-row">
                                 <button onClick={getNewQuote} className="btn btn-primary ml-3">
                                     New Quote
                                 </button>
