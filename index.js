@@ -60,7 +60,7 @@ function App(){
                             )}
 
                             <div className="d-flex flex-row">
-                                <button onClick={getNewQuote} className="btn btn-primary ml-3">
+                                <button onClick={getNewQuote} className="btn btn-primary ml-3 mx-1">
                                     New Quote
                                 </button>
                                 <a
@@ -71,7 +71,7 @@ function App(){
                                         )
                                     }
                                     target="_blank"
-                                    className="btn btn-warning">
+                                    className="btn btn-outline-primary mx-1">
                                         <i className="fa fa-twitter"></i>
                                 </a>
                                 <a
@@ -83,7 +83,7 @@ function App(){
                                         "&canonicalUrl=https%3A%2F%2Fwww.tumblr.com%2Fbuttons&shareSource=tumblr_share_button"
                                     }
                                     target="_blank"
-                                    className="btn btn-danger">
+                                    className="btn btn-outline-primary mx-1">
                                     <i className="fa fa-tumblr"></i>
                                 </a>
                             </div>
