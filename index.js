@@ -43,14 +43,14 @@ function App(){
             <div className="container pt-5">
                 <div className="jumbotron">
                     <div className="card">
-                        <div className="card-body m-5">
+                        <div id="quote-box" className="card-body m-5">
                             {randomQuote ? (
                                 <>
-                                <div className="d-flex flex-row">
+                                <div id="text" className="d-flex flex-row">
                                     <i className="fa fa-quote-left fa-2x"></i>
                                     <p  className="card-text text-center ml-2" style={{ fontSize: 30 }}>{randomQuote.text}</p>
                                 </div>
-                                <h5 className="title" style={{textAlign: 'right'}}>
+                                <h5 id="author" className="title" style={{textAlign: 'right'}}>
                                     - {randomQuote.author || "No author"}
                                 </h5>
                                 
@@ -60,10 +60,11 @@ function App(){
                             )}
 
                             <div className="d-flex flex-row">
-                                <button onClick={getNewQuote} className="btn btn-primary ml-3 mx-1">
+                                <button id="new-quote" onClick={getNewQuote} className="btn btn-primary ml-3 mx-1">
                                     New Quote
                                 </button>
                                 <a
+                                    id="tweet-quote"
                                     href={
                                         "https://twitter.com/intent/tweet?hashtags=quotes&related=freecodecamp&text=" +
                                         encodeURIComponent(
