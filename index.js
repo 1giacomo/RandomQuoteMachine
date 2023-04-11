@@ -41,7 +41,7 @@ function App(){
     return (
         <div style={{ backgroundColor: color, minHeight: "100vh" }}>
             <div className="container pt-5">
-                <div className="jumbotron">
+                <div className="jumbotron p-5">
                     <div className="card">
                         <div id="quote-box" className="card-body m-5">
                             {randomQuote ? (
